@@ -11,6 +11,7 @@ RUN pip install pylantern && \
     jupyter labextension install @jpmorganchase/perspective-jupyterlab
 RUN pip install future cufflinks perspective-python seaborn scipy sklearn websocket-client qgrid
 RUN conda install -y ujson
+RUN apt-get install -y texlive-xetex
 
 COPY ./files /opt/files
 
